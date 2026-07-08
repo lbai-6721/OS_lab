@@ -1,0 +1,8 @@
+﻿# 创建挂载脚本
+sudo tee ~/mount-shared.sh > /dev/null << 'EOF'
+#!/bin/bash
+sudo vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other -o uid=1000 -o gid=1000
+EOF
+
+# 赋予执行权限
+sudo chmod +x ~/mount-shared.sh

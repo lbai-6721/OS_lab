@@ -35,7 +35,7 @@ dmesg | tail
 # 创建设备节点（主设备号 200，次设备号 0）
 mknod /dev/edu c 200 0
 
-# 运行测试程序
+# 运行测试程序  
 ./user_space
 ```
 

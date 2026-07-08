@@ -38,7 +38,7 @@ static int thread1_func(void *data)
 
     /*
      * 这里选择只遍历一次进程列表。
-     * 如果你想周期性遍历，可以把 for_each_process 放到 while 循环里。
+     * 如果要周期性遍历，把 for_each_process 放到 while 循环里。
      */
     for_each_process(p) {
         if (kthread_should_stop())

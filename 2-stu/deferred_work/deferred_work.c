@@ -14,8 +14,7 @@ MODULE_AUTHOR("FuShengyuan");
 MODULE_DESCRIPTION("deferred work");
 
 /*
- * 修改这里为你的学号后 3 位
- * 例如学号后 3 位是 120，则函数1打印120，函数2打印121，以此类推
+ * 这里为学号后 3 位
  */
 #define BASE_ID 120
 #define FUNC_NUM 10
